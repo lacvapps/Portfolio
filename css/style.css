@@ -28,28 +28,25 @@
 
 #mainPic {
 	display: block;
-	padding-right: 25%;
-	padding-left: 25%;
+	padding-right: 30%;
+	padding-left: 30%;
 	width: 100%;
 	position: relative;
-}
-#mainInfo{
-	display: none;
 }
 #mainPic img {
 	width: 40%;
 }
-#ptitle {
-	position: relative;
+p.content {
 	display: none;
 }
-#pinfo {
-	position: relative;
-	display: none;
+p.content img {
+	width: 75%;
+	margin: 0;
 }
-div.info {
+div#info {
 	position: absolute;
-	display: none;
+	padding-left: 10%;
+	padding-right: 70%;
 }
 div.pList {
 	display: block;
@@ -60,11 +57,14 @@ div.pList {
 ul#project-list {
 	list-style-type: none;
 }
-
 #project-list li {
 	width: 15%;
 	float: left;
 	padding: 1%;
+	margin: 1%;
+	border-style: solid;
+	border-radius: 20px;
+	border-width: 1px;
 }
 
 img {

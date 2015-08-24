@@ -15,32 +15,56 @@
     </head>
     <body>
     	<br>
-    		<div id="mainInfo"></div>
+    		<div id="info"> 
+                <div class="artistconnect">  
+                    <p id="acinfo" style="text-align: center; font-size: 24px;"> Artist Connect </p>
+                    <p id="acinfo"> My first Wordpress Site. </p>
+                    <p id="acinfo"> The site that got me into coding. I custom coded alot on this website and set up many plugins to do specifically what I wanted. From troubleshooting problems I learned so much about PHP, HTML, Css, and javascript. I am still working on the site but now I am building it from the ground up with my own custom code. </p>
+                    <a href="http://www.artistconnect.co"><p id="acinfo"> www.ArtistConnect.co </p></a>
+                </div> 
+                <div class="rockclimber"> 
+                    <p id="rcinfo" class="content" style="text-align: center; font-size: 24px;"> Rock Climber </p>
+                    <p id="rcinfo" class="content"> My first App</p>
+                    <p id="rcinfo" class="content"> This app is currently on the app store and has about 500 downloads. It wasn't a huge success but it taught me alot about logic and coding. I don't neccesarily want to keep programing entertainment apps but I know that I learned alot of useful programming skills through the creation of this app.</p>
+                    <a href="https://play.google.com/store/apps/details?id=lacv.salad.rockclimber"><p id="rcinfo" class="content"><img src="googleplay.png"></p></a>
+                    <a href="https://itunes.apple.com/us/app/rock-climber/id983790364?ls=1&mt=8"><p id="rcinfo" class="content"><img src="appstore.png"></p></a>
+                </div>
+                <div class="stc"> 
+                    <p id="scinfo" class="content">Stop The Comets </p>
+                    <p id="scinfo" class="content"> My kinda 2nd App </p>
+                    <p id="scinfo" class="content"> I made this app in 1 day while still developing Rock Climber. I was trying to get traffic from the trending app "Don't stop the Creeps" I was unsuccesful. None the less this app presented it's own challenges and taught me alot. </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.lacv.comets"><p id="scinfo" class="content"><img src="googleplay.png"></p></a>
+                    <a href="https://itunes.apple.com/us/app/stop-the-comets/id996339922?ls=1&mt=8"><p id="scinfo" class="content"><img src="appstore.png"></p></a>
+                </div>
+            </div>
             <div id="mainPic"><img src="ac.png"></div>
     		<div class="pList">
     			<h2 class="list-title">Projects</h2>
     			<ul id="project-list">
+                    <li id="ac"><img src="ac.png"></li>
     				<li id="rc"><img src="rc.png"></li>
     				<li id="sc"><img src="sc.png"></li>
-    				<li id="ac"><img src="ac.png"></li>
+    				
     			</ul>
     		</div>   
-<div class="info">
-    <p id="acinfo"> Artist Connect </p>
-    <p id="acinfo"> My first Wordpress Site </p>
-    <p id="rcinfo"> Rock Climber </p>
-    <p id="scinfo"> Stop The Comets </p>
-</div>
 <script type="text/javascript">
 $('#project-list li').click(
 	function mainPicture () {
         $("#mainPic").empty();
         var HTMLmainPicture = $("<img src='" + $(this).attr('id')+ '.png' + "'>");
-        $('#mainPic').append(HTMLmainPicture);
-        $("#mainInfo").empty();
-        var HTMLmainInfo = $("#" + $(this).attr('id')+'info');
-        $('#mainInfo').append(HTMLmainInfo);  
-        console.log($("#" + $(this).attr('id')+'info'))
+        $('#mainPic').hide().append(HTMLmainPicture).fadeIn(500);
+        // Show info
+            $("p#acinfo").hide();
+            $("p#rcinfo").hide();
+            $("p#scinfo").hide();
+            $("p#" + $(this).attr('id')+'info').show();
+    }
+);
+$('#project-list li').hover(function() {
+    $(this).stop().animate({"opacity": 0.5}); 
+    },
+    function() { 
+    $(this).stop().animate({"opacity": 1}); 
     }
 );
 </script> 
