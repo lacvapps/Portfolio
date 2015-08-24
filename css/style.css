@@ -1,0 +1,82 @@
+.main {
+	display: block;
+	padding-right: 10%;
+}
+
+.hname {
+	margin: 0px;
+}
+
+#name {
+	text-align: right;
+	color: #555;
+	font-size: 25px;
+	padding-right: 10%;
+	margin: 0px;
+}
+
+.htitle {
+	margin: 0px;
+}
+#title {
+	text-align: right;
+	padding-right: 10%;
+	margin: 0px;
+	color: #555;
+	font-size: 12px;
+}
+
+#mainPic {
+	display: block;
+	padding-right: 25%;
+	padding-left: 25%;
+	width: 100%;
+	position: relative;
+}
+#mainInfo{
+	display: none;
+}
+#mainPic img {
+	width: 40%;
+}
+#ptitle {
+	position: relative;
+	display: none;
+}
+#pinfo {
+	position: relative;
+	display: none;
+}
+div.info {
+	position: absolute;
+	display: none;
+}
+div.pList {
+	display: block;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+ul#project-list {
+	list-style-type: none;
+}
+
+#project-list li {
+	width: 15%;
+	float: left;
+	padding: 1%;
+}
+
+img {
+	max-width: 100%;
+	margin: auto;
+}
+
+#underline {
+	border-bottom: 1px;
+	border-color: #999;
+	border-style: solid;
+	width: 80%;
+	float: right;
+	padding-right: 10%;
+}

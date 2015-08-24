@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jQuery.js"></script>
+        <script src="js/port.js"></script>
+
+        <title>Portfolio</title>
+        	<div class="main">
+        		<div id="name"><h1 class="hname">Russell LaCour</h1></div>
+        		<div id="title"><h3 class="htitle">FRONT-END WEB DEVELOPER</h3></div>
+        		<div id="underline"></div>
+        	</div>
+    </head>
+    <body>
+    	<br>
+    		<div id="mainInfo"></div>
+            <div id="mainPic"><img src="ac.png"></div>
+    		<div class="pList">
+    			<h2 class="list-title">Projects</h2>
+    			<ul id="project-list">
+    				<li id="rc"><img src="rc.png"></li>
+    				<li id="sc"><img src="sc.png"></li>
+    				<li id="ac"><img src="ac.png"></li>
+    			</ul>
+    		</div>   
+<div class="info">
+    <p id="acinfo"> Artist Connect </p>
+    <p id="acinfo"> My first Wordpress Site </p>
+    <p id="rcinfo"> Rock Climber </p>
+    <p id="scinfo"> Stop The Comets </p>
+</div>
+<script type="text/javascript">
+$('#project-list li').click(
+	function mainPicture () {
+        $("#mainPic").empty();
+        var HTMLmainPicture = $("<img src='" + $(this).attr('id')+ '.png' + "'>");
+        $('#mainPic').append(HTMLmainPicture);
+        $("#mainInfo").empty();
+        var HTMLmainInfo = $("#" + $(this).attr('id')+'info');
+        $('#mainInfo').append(HTMLmainInfo);  
+        console.log($("#" + $(this).attr('id')+'info'))
+    }
+);
+</script> 
+
+    </body>
+</html>
