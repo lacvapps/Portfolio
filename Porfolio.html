@@ -18,10 +18,10 @@
     	<br>
     		<div id="info"> 
                 <div class="artistconnect">  
-                    <h2><p id="acinfo"> Artist Connect </p></h2>
-                    <p id="acinfo"> My first Wordpress Site. </p>
-                    <p id="acinfo"> The site that got me into coding. I custom coded alot on this website and set up many plugins to do specifically what I wanted. From troubleshooting problems I learned so much about PHP, HTML, Css, and javascript. I am still working on the site but now I am building it from the ground up with my own custom code. </p>
-                    <a href="http://www.artistconnect.co"><p id="acinfo"> www.ArtistConnect.co </p></a>
+                    <h2><p id="acinfo" class="content"> Artist Connect </p></h2>
+                    <p id="acinfo" class="content"> My first Wordpress Site. </p>
+                    <p id="acinfo" class="content"> The site that got me into coding. I custom coded alot on this website and set up many plugins to do specifically what I wanted. From troubleshooting problems I learned so much about PHP, HTML, Css, and javascript. I am still working on the site but now I am building it from the ground up with my own custom code. </p>
+                    <a href="http://www.artistconnect.co"><p id="acinfo" class="content"> www.ArtistConnect.co </p></a>
                 </div> 
                 <div class="rockclimber"> 
                     <h2><p id="rcinfo" class="content"> Rock Climber </p></h2>
@@ -59,17 +59,16 @@
     			</ul>
     		</div>   
 <script type="text/javascript">
+$('document').ready(function() {
+    $('p#acinfo').show()
+});
 $('#project-list li').click(
 	function mainPicture () {
         $("#mainPic").empty();
         var HTMLmainPicture = $("<img src='" + $(this).attr('id')+ '.png' + "'>");
         $('#mainPic').hide().append(HTMLmainPicture).fadeIn(500);
         // Show info
-            $("p#acinfo").hide();
-            $("p#rcinfo").hide();
-            $("p#scinfo").hide();
-            $("p#ghinfo").hide();
-            $("p#rsinfo").hide();
+            $(".content").hide();
             $("p#" + $(this).attr('id')+'info').show();
     }
 );
