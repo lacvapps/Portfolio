@@ -35,6 +35,7 @@
 	padding-left: 30%;
 	width: 100%;
 	position: relative;
+	z-index: 20;
 }
 #mainPic img {
 	width: 40%;
@@ -50,6 +51,7 @@ div#info {
 	position: absolute;
 	padding-left: 10%;
 	padding-right: 70%;
+	z-index: 30;
 }
 div.pList {
 	display: block;
