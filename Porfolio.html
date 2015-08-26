@@ -1,66 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+  <head>
+        <title>Portfolio</title>
         <meta charset="utf-8">
         <link href="css/style.css" rel="stylesheet">
-        <script src="js/jQuery.js"></script>
-        <script src="js/port.js"></script>
-
-        <title>Portfolio</title>
-        	<div class="main">
-                <div id="logo"><img src="lacv.png"  alt="LACV Logo"></div>
-        		<div id="name"><h1 class="hname">Russell LaCour</h1></div>
-        		<div id="title"><h3 class="htitle">FRONT-END WEB DEVELOPER</h3></div>
-        		<div id="underline"></div>
-        	</div>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
-    	<br>
-    		<div id="info"> 
-                <div class="artistconnect">  
-                    <h2><p id="acinfo" class="content"> Artist Connect </p></h2>
-                    <p id="acinfo" class="content"> My first Wordpress Site. </p>
-                    <p id="acinfo" class="content"> The site that got me into coding. I custom coded alot on this website and set up many plugins to do specifically what I wanted. From troubleshooting problems I learned so much about PHP, HTML, Css, and javascript. I am still working on the site but now I am building it from the ground up with my own custom code. </p>
-                    <a href="http://www.artistconnect.co"><p id="acinfo" class="content"> www.ArtistConnect.co </p></a>
-                </div> 
-                <div class="rockclimber"> 
-                    <h2><p id="rcinfo" class="content"> Rock Climber </p></h2>
-                    <p id="rcinfo" class="content"> My first App</p>
-                    <p id="rcinfo" class="content"> This app is currently on the app store and has about 500 downloads. It wasn't a huge success but it taught me alot about logic and coding. I don't neccesarily want to keep programing entertainment apps but I know that I learned alot of useful programming skills through the creation of this app.</p>
-                    <a href="https://play.google.com/store/apps/details?id=lacv.salad.rockclimber"><p id="rcinfo" class="content"><img src="googleplay.png"></p></a>
-                    <a href="https://itunes.apple.com/us/app/rock-climber/id983790364?ls=1&mt=8"><p id="rcinfo" class="content"><img src="appstore.png"></p></a>
-                </div>
-                <div class="stc"> 
-                    <h2><p id="scinfo" class="content">Stop The Comets </p></h2>
-                    <p id="scinfo" class="content"> My kinda 2nd App </p>
-                    <p id="scinfo" class="content"> I made this app in 1 day while still developing Rock Climber. I was trying to get traffic from the trending app "Don't stop the Creeps" I was unsuccesful. None the less this app presented it's own challenges and taught me alot. </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.lacv.comets"><p id="scinfo" class="content"><img src="googleplay.png"></p></a>
-                    <a href="https://itunes.apple.com/us/app/stop-the-comets/id996339922?ls=1&mt=8"><p id="scinfo" class="content"><img src="appstore.png"></p></a>
-                </div>
-                <div class="gh">
-                    <h2><p id="ghinfo" class="content">My Github</p></h2>
-                    <a href="https://github.com/lacvapps/"><p id="ghinfo" class="content"> Click Here </p></a>
-                </div>
-                <div class="rs">
-                    <h2><p id="rsinfo" class="content">My Resume</p></h2>
-                    <p id="rsinfo" class="content"> Brought to you by udacity.com Customized by yours truly. The first java based webpage I coded from scratch. This webpage pulls my info from Arrays and then using an assortment of functions neatly appends them to the page.  </p>
-                    <a href="https://prlacour.com/"><p id="rsinfo" class="content"> Click Here </p></a>
-                </div>
+<body>
+    <header>
+        <div class="main">
+            <div id="logo">
+                <img class="img-responsive" src="lacv.png" alt="LACV Logo">
             </div>
-            <div id="mainPic"><img src="ac.png"  alt="Artist Connect Logo"></div>
-    		<div class="pList">
-    			<h2 class="list-title">Projects</h2>
+            <div id="name">
+                <h1 class="hname">Russell LaCour</h1>
+            </div>
+            <div id="title">
+                <h3 class="htitle">FRONT-END WEB DEVELOPER</h3>
+            </div>
+            <div id="underline"></div>
+        </div>
+    </header>
+    <br>
+        <div class="container">
+    		<div id="picture" class="row">
+                <div id="acinfo" class="col-sm-3">
+                    <h2>Artist Connect </h2>
+                    <p> My first Wordpress Site. </p>
+                    <p> The site that got me into coding. I custom coded alot on this website and set up many plugins to do specifically what I wanted. From troubleshooting problems I learned so much about PHP, HTML, Css, and javascript. I am still working on the site but now I am building it from the ground up with my own custom code. </p>
+                    <a href="http://www.artistconnect.co">www.ArtistConnect.co</a>
+                </div>
+                <div id="rcinfo" class="col-sm-3">
+                    <h2> Rock Climber </h2>
+                    <p> My first App</p>
+                    <p> This app is currently on the app store and has about 500 downloads. It wasn't a huge success but it taught me alot about logic and coding. I don't neccesarily want to keep programing entertainment apps but I know that I learned alot of useful programming skills through the creation of this app.</p>
+                    <a href="https://play.google.com/store/apps/details?id=lacv.salad.rockclimber"><img class="img-responsive" src="googleplay.png" alt="Google Play Button"></a>
+                    <a href="https://itunes.apple.com/us/app/rock-climber/id983790364?ls=1"><img class="img-responsive" src="appstore.png" alt="App Store Button"></a>
+                </div>
+                <div id="scinfo" class="col-sm-3">
+                    <h2> Stop The Comets </h2>
+                    <p> My kinda 2nd App </p>
+                    <p> I made this app in 1 day while still developing Rock Climber. I was trying to get traffic from the trending app "Don't stop the Creeps" I was unsuccesful. None the less this app presented it's own challenges and taught me alot.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.lacv.comets"><img class="img-responsive" src="googleplay.png" alt="Google Play Button"></a>
+                    <a href="https://itunes.apple.com/us/app/stop-the-comets/id996339922?ls=1"><img class="img-responsive" src="appstore.png" alt="App Store Button"></a>
+                </div>
+                <div id="ghinfo" class="col-sm-3">
+                    <h2>My Github</h2>
+                    <a href="https://github.com/lacvapps/">Click Here</a>
+                </div>
+                <div id="rsinfo" class="col-sm-3">
+                    <h2>My Resume</h2>
+                    <p> Brought to you by udacity.com Customized by yours truly. The first java based webpage I coded from scratch. This webpage pulls my info from Arrays and then using an assortment of functions neatly appends them to the page.</p>
+                    <a href="https://prlacour.com/">Click Here</a>
+                </div>
+            <div id="mainPic" class="col-sm-6">
+                <img class="img-responsive" src="ac.png"  alt="Artist Connect Logo">
+            </div>
+        </div>
+            <h2 id="list-title">Projects</h2>
+    	    <div id="plist" class="row">
     			<ul id="project-list">
-                    <li id="ac"><img src="ac.png" alt="Artist Connect Logo"></li>
-                    <li id="rs"><img src="rs.png" alt="Resume Icon"></li>
-    				<li id="rc"><img src="rc.png" alt="Rock Climber Icon"></li>
-    				<li id="sc"><img src="sc.png" alt="Stop the Comets Icon"></li>
-                    <li id="gh"><img src="gh.png" alt="Github Icon"></li>				
+                    <li id="ac" class="col-xs-6 col-sm-4 col-md-3">
+                        <img class="img-responsive" src="ac.png" alt="Artist Connect Logo">
+                    </li>
+                    <li id="rs" class="col-xs-6 col-sm-4 col-md-3">
+                        <img class="img-responsive" src="rs.png" alt="Resume Icon">
+                    </li>
+    				<li id="rc" class="col-xs-6 col-sm-4 col-md-3">
+                        <img class="img-responsive" src="rc.png" alt="Rock Climber Icon">
+                    </li>
+    				<li id="sc" class="col-xs-6 col-sm-4 col-md-3">
+                        <img class="img-responsive" src="sc.png" alt="Stop the Comets Icon">
+                    </li>
+                    <li id="gh" class="col-xs-6 col-sm-4 col-md-3">
+                        <img class="img-responsive" src="gh.png" alt="Github Icon">
+                    </li>
     			</ul>
-    		</div>   
+    		</div>
+        </div>
 <script type="text/javascript">
 $('document').ready(function() {
-    $('p#acinfo').show()
+    $('#acinfo').show()
 });
 $('#project-list li').click(
 	function mainPicture () {
@@ -68,18 +91,18 @@ $('#project-list li').click(
         var HTMLmainPicture = $("<img src='" + $(this).attr('id')+ '.png' + "'>");
         $('#mainPic').hide().append(HTMLmainPicture).fadeIn(500);
         // Show info
-            $(".content").hide();
-            $("p#" + $(this).attr('id')+'info').show();
+            $(".col-sm-3").hide();
+            $("#" + $(this).attr('id')+'info').show();
     }
 );
 $('#project-list li').hover(function() {
-    $(this).stop().animate({"opacity": 0.5}); 
+    $(this).stop().animate({"opacity": 0.5});
     },
-    function() { 
-    $(this).stop().animate({"opacity": 1}); 
+    function() {
+    $(this).stop().animate({"opacity": 1});
     }
 );
-</script> 
+</script>
 
     </body>
 </html>

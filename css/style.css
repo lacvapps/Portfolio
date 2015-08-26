@@ -1,12 +1,13 @@
+
 .main {
 	display: block;
-	padding-right: 10%;
 }
+
 #logo img{
 	float: left;
-	max-width: 120px;
-	padding-left: 10%;
+	width: 100px;
 }
+
 .hname {
 	margin: 0px;
 }
@@ -17,56 +18,55 @@
 	font-size: 25px;
 	margin: 0px;
 }
-.list-title {
-	text-align: center;
-}
+
 .htitle {
 	margin: 0px;
+	font-size: 14px;
 }
+
 #title {
 	text-align: right;
 	margin: 0px;
 	color: #555;
 	font-size: 12px;
 }
+
 #mainPic {
-	display: block;
-	padding-right: 30%;
-	padding-left: 30%;
-	width: 100%;
-	position: relative;
-	z-index: 20;
+	z-index: 0;
 }
+
 #mainPic img {
-	width: 40%;
+	width: 400px;
 }
-p.content {
+
+.col-sm-3 {
 	display: none;
+	z-index: 1;
+	float: left;
 }
-p.content img {
+
+.img-responsive {
+	width: 140px;
+}
+
+.content img {
 	width: 75%;
 	margin: 0;
 }
-div#info {
-	position: absolute;
-	padding-left: 10%;
-	padding-right: 70%;
-	z-index: 30;
+
+#plist.row {
+	padding-right: 5%;
 }
-div.pList {
-	display: block;
-	padding-left: 10%;
-	padding-right: 10%;
+
+#list-title {
+	text-align: center;
 }
 
 ul#project-list {
 	list-style-type: none;
 }
+
 #project-list li {
-	width: 15%;
-	float: left;
-	padding: 1%;
-	margin: 1%;
 	border-style: solid;
 	border-radius: 20px;
 	border-width: 1px;
@@ -81,7 +81,5 @@ img {
 	border-bottom: 1px;
 	border-color: #999;
 	border-style: solid;
-	width: 80%;
-	float: right;
-	padding-right: 10%;
+	padding-right:
 }
