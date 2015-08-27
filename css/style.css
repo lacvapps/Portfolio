@@ -33,6 +33,7 @@
 
 #mainPic {
 	z-index: 0;
+	text-align: center;
 }
 
 #mainPic img {
